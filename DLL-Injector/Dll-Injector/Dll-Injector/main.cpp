@@ -89,7 +89,7 @@ bool InjectModuleToProcess( const std::string ll_file_name, const std::string ta
 		return false;
 	}
 
-	// Trigger The Hook
+	/* Trigger The Hook */
 	PostThreadMessageW( thread_id, WM_USER + 400, 0, 0 );
 
 	/* Remove Hook */
